@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClipVault — менеджер буфера обмена</title>
+<meta name="description" content="ClipVault — лёгкий менеджер буфера обмена для Windows: история, закрепление, быстрые преобразования текста и авто-копирование выделения.">
+<link rel="icon" href="icon.ico">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg-glow"></div>
+
+<header class="nav">
+  <div class="brand">
+    <img src="icon.ico" alt="" width="30" height="30">
+    <span>ClipVault</span>
+  </div>
+  <nav class="links">
+    <a href="#features">Возможности</a>
+    <a href="#download">Скачать</a>
+    <a href="#verify">Проверка</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="badge">Версия 1.0.0 · Windows 10/11</span>
+      <h1>Буфер обмена,<br><span class="accent">который помнит всё</span></h1>
+      <p class="lead">
+        ClipVault хранит историю скопированного — текст, картинки и файлы.
+        Закрепляйте важное, преобразуйте текст в один клик и вставляйте без лишних движений.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="ClipVault.exe" download>
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v9.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4A1 1 0 1 1 8.7 11.3l2.3 2.3V4a1 1 0 0 1 1-1Zm-6 15a1 1 0 0 1 1 1v1h10v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1Z"/></svg>
+          Скачать бесплатно
+        </a>
+        <span class="hint">449 КБ · без установки</span>
+      </div>
+      <ul class="chips">
+        <li>Без установки</li>
+        <li>Открытый исходный код</li>
+        <li>Тёмная тема</li>
+        <li>Автозапуск с Windows</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="features" class="section">
+    <h2>Что умеет</h2>
+    <div class="grid">
+      <article class="card">
+        <div class="ic">📋</div>
+        <h3>История буфера</h3>
+        <p>Всё, что вы копировали: текст, ссылки, цвета, картинки и файлы. Поиск и фильтры по типу.</p>
+      </article>
+      <article class="card">
+        <div class="ic">📌</div>
+        <h3>Закрепление</h3>
+        <p>Закрепляйте нужные записи — они не исчезнут при очистке истории и всегда под рукой.</p>
+      </article>
+      <article class="card">
+        <div class="ic">✦</div>
+        <h3>Быстрые преобразования</h3>
+        <p>Регистр, snake_case, camelCase, Base64, сортировка строк, удаление повторов и многое другое.</p>
+      </article>
+      <article class="card">
+        <div class="ic">⚡</div>
+        <h3>Авто-копирование</h3>
+        <p>Выделили текст — он сразу попал в историю. Работает в большинстве приложений через UI Automation.</p>
+      </article>
+      <article class="card">
+        <div class="ic">🖱️</div>
+        <h3>Удобный выбор</h3>
+        <p>Откройте историю по Ctrl+Shift+V. Клик — копировать, Enter — вставить, правый клик — меню действий.</p>
+      </article>
+      <article class="card">
+        <div class="ic">🔒</div>
+        <h3>Локально и приватно</h3>
+        <p>Данные хранятся только у вас на компьютере, в папке <code>data</code> рядом с программой. Ничего в сеть.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="download" class="section download">
+    <h2>Скачать</h2>
+    <p class="muted">Один файл — программа готова к работе. Требуется Windows 10 или 11.</p>
+    <a class="btn primary big" href="ClipVault.exe" download>Скачать ClipVault.exe</a>
+    <p class="hint">После скачивания запустите файл. Для автозапуска включите опцию в настройках или в меню трея.</p>
+  </section>
+
+  <section id="verify" class="section">
+    <h2>Проверка файла</h2>
+    <p class="muted">Файл не подписан цифровой подписью, поэтому Windows SmartScreen может показать предупреждение.
+      Нажмите «Подробнее» → «Выполнить в любом случае». Чтобы убедиться, что файл не изменён, сверьте контрольную сумму:</p>
+    <div class="hash">
+      <span class="hash-label">SHA-256</span>
+      <code>8532ECFC9E2FBADDCBAF72F196166CAF0FBFF8F38506844AE4603F737081463A</code>
+    </div>
+    <p class="hint">Проверить в PowerShell: <code>(Get-FileHash .\ClipVault.exe -Algorithm SHA256).Hash</code></p>
+  </section>
+</main>
+
+<footer class="footer">
+  <span>ClipVault · 2026</span>
+  <span>Сделано для Windows</span>
+</footer>
+</body>
+</html>
