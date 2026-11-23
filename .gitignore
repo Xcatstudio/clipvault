@@ -1,0 +1,22 @@
+# Личные данные буфера обмена — НЕ публиковать
+/data/
+data/
+*.txt.bak
+*.bak
+*.tmp
+*.old
+log.txt
+log.txt.old
+
+# Отладочные артефакты
+*.pdb
+*.user
+*.suo
+.vs/
+
+# Временные файлы
+Thumbs.db
+desktop.ini
+
+# Временный предпросмотр иконки
+icon_preview.png
